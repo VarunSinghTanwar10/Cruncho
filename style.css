@@ -1,0 +1,405 @@
+/* Body */
+body {
+    background-color: rgba(0, 0, 0, 0.95);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 2px solid white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    transition: top 0.4s ease, opacity 0.4s ease;
+
+
+}
+
+
+/* Logo */
+.logo {
+    flex: 1;
+}
+
+.logo a {
+
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 14px;
+    font-family: "Bungee", sans-serif;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    animation: bg-light 2.5s infinite alternate-reverse;
+}
+
+.logo a:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.logo a:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+/* Navbar */
+.navbar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar a:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.navbar a:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+/* Login button */
+.login-btn {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.login-btn button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 18px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-btn button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.login-btn button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.login-btn button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+/* Hero Section */
+.Hero-section {
+    display: grid;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    animation: HeroFadeIn 1s alternate ease-in-out;
+    margin-bottom: 20vh;
+
+}
+
+.Hero-section h1 {
+    font-size: 60px;
+    color: white;
+    font-family: "Bungee", sans-serif;
+    text-shadow: 4px 4px rgba(245, 245, 245, 0.651);
+}
+
+.Hero-section span a {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.Hero-section a:hover {
+    text-decoration: underline;
+}
+
+@keyframes HeroFadeIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Products wrapper */
+.products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin: 12vh 40px 20vh 40px;
+}
+
+/* Product containers */
+.product-container-1,
+.product-container-2,
+.product-container-3,
+.product-container-4,
+.product-container-5,
+.product-container-6 {
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.product-container-1:hover,
+.product-container-2:hover,
+.product-container-3:hover,
+.product-container-4:hover,
+.product-container-5:hover,
+.product-container-6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.product-container-1 h1,
+.product-container-2 h1,
+.product-container-3 h1,
+.product-container-4 h1,
+.product-container-5 h1,
+.product-container-6 h1 {
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Images */
+.product-container-1 img,
+.product-container-2 img,
+.product-container-3 img,
+.product-container-4 img,
+.product-container-5 img,
+.product-container-6 img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+/* Text */
+.product-container-1 p,
+.product-container-2 p,
+.product-container-3 p,
+.product-container-4 p,
+.product-container-5 p,
+.product-container-6 p {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Order Button */
+.order-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.order-btn button {
+    display: inline-block;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    padding: 10px 18px;
+    transition: all 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.order-btn button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+    border: none;
+}
+
+.order-btn button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+
+}
+
+
+/* Footer Container */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    border-top: 2px solid white;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    gap: 20px;
+
+}
+
+/* Each column */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Column Heading */
+.footer-column h2 {
+    font-family: "Bungee", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+/* Footer Rows */
+.footer-row {
+    border: 1px solid white;
+    padding: 1px 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.footer-row a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-row:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.footer-row:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+}
+
+.copy-right p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .site-footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .products-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo,
+    .navbar,
+    .login-btn {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .products-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 12vh;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .products-wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 10vh;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
