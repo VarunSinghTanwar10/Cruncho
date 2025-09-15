@@ -283,7 +283,6 @@ header {
     color: white;
     font-family: "Poppins", sans-serif;
     gap: 20px;
-    border: 2px solid white;
     height: 40vh;
 
 }
@@ -314,7 +313,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 180px;
+    width: 250px;
     transition: all 0.3s ease-in-out;
     border-radius: 50px;
     cursor: pointer;
