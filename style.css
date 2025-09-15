@@ -283,8 +283,12 @@ header {
     color: white;
     font-family: "Poppins", sans-serif;
     gap: 20px;
-    height: 40vh;
-
+    height: auto;
+    /* allow height to grow naturally */
+    flex-wrap: wrap;
+    /* let columns wrap on smaller screens */
+    align-items: stretch;
+    /* keep all columns the same height */
 }
 
 /* Each column */
@@ -293,7 +297,11 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-
+    flex: 1;
+    /* all columns take equal space */
+    min-width: 200px;
+    /* prevents shrinking too much */
+    box-sizing: border-box;
 }
 
 /* Column Heading */
@@ -302,10 +310,9 @@ header {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
-
 }
 
-/* Footer Rows */
+/* Footer Rows (buttons/links) */
 .footer-row {
     border: 1px solid white;
     padding: 10px 20px;
@@ -313,7 +320,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 250px;
+    min-width: 180px;
+    max-width: 100%;
     transition: all 0.3s ease-in-out;
     border-radius: 50px;
     cursor: pointer;
@@ -341,15 +349,63 @@ header {
     transform: scale(0.85);
 }
 
+/* Copyright */
 .copy-right {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .copy-right p {
     color: white;
     font-family: "Poppins", sans-serif;
+    font-size: 14px;
 }
+
+/* Responsive footer */
+@media (max-width: 1024px) {
+    .site-footer {
+        justify-content: center;
+    }
+
+    .footer-column {
+        flex: 1 1 45%;
+        /* 2 columns per row */
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+        /* full width per column */
+        margin-bottom: 20px;
+    }
+
+    .footer-row {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-row {
+        max-width: 90%;
+        font-size: 14px;
+    }
+
+    .footer-column h2 {
+        font-size: 18px;
+    }
+}
+
 
 
 /* Responsive footer */
