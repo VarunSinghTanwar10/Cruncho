@@ -284,11 +284,9 @@ header {
     font-family: "Poppins", sans-serif;
     gap: 20px;
     height: auto;
-    /* allow height to grow naturally */
     flex-wrap: wrap;
-    /* let columns wrap on smaller screens */
     align-items: stretch;
-    /* keep all columns the same height */
+
 }
 
 /* Each column */
@@ -298,9 +296,7 @@ header {
     align-items: center;
     gap: 30px;
     flex: 1;
-    /* all columns take equal space */
     min-width: 200px;
-    /* prevents shrinking too much */
     box-sizing: border-box;
 }
 
