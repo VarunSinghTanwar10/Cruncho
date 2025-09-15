@@ -274,19 +274,20 @@ header {
 }
 
 
+
 /* Footer Container */
 .site-footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px;
+    padding: 20px 40px;
+    /* reduced padding */
     border-top: 2px solid white;
     color: white;
     font-family: "Poppins", sans-serif;
-    gap: 20px;
+    gap: 15px;
     height: auto;
     flex-wrap: wrap;
-    align-items: stretch;
-
+    align-items: flex-start;
 }
 
 /* Each column */
@@ -294,32 +295,34 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
+    /* tighter spacing */
     flex: 1;
-    min-width: 200px;
+    min-width: 180px;
     box-sizing: border-box;
 }
 
 /* Column Heading */
 .footer-column h2 {
     font-family: "Bungee", sans-serif;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
-/* Footer Rows (buttons/links) */
+/* Footer Rows (Buttons/Links) */
 .footer-row {
-    border: 1px solid white;
-    padding: 10px 20px;
-    height: 50px;
+    padding: 6px 14px;
+    /* smaller padding */
+    height: 40px;
+    /* smaller button height */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 180px;
+    min-width: 160px;
     max-width: 100%;
     transition: all 0.3s ease-in-out;
-    border-radius: 50px;
+    border-radius: 40px;
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
@@ -329,13 +332,14 @@ header {
     color: white;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
+/* Keep hover and active shadows same */
 .footer-row:hover {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
@@ -349,14 +353,16 @@ header {
 .copy-right {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    /* smaller spacing */
     text-align: center;
 }
 
 .copy-right p {
     color: white;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    /* compact text */
 }
 
 /* Responsive footer */
@@ -367,8 +373,7 @@ header {
 
     .footer-column {
         flex: 1 1 45%;
-        /* 2 columns per row */
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 }
 
@@ -376,53 +381,35 @@ header {
     .site-footer {
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
 
     .footer-column {
         flex: 1 1 100%;
-        /* full width per column */
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .footer-row {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
     }
 }
 
 @media (max-width: 480px) {
     .footer-row {
         max-width: 90%;
-        font-size: 14px;
+        font-size: 13px;
+        height: 36px;
+        /* slightly smaller buttons on small screens */
     }
 
     .footer-column h2 {
-        font-size: 18px;
-    }
-}
-
-
-
-/* Responsive footer */
-@media (max-width: 768px) {
-    .site-footer {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        font-size: 16px;
     }
 }
 
 
 
 
-/* Responsive */
-@media (max-width: 1024px) {
-    .products-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 15vh;
-    }
-
-}
 
 @media (max-width: 768px) {
     header {
