@@ -331,7 +331,6 @@ header {
 
 
 
-
 /* Footer Container */
 .site-footer {
     display: flex;
@@ -421,6 +420,13 @@ header {
 
 
 
+/* Responsive hero section welcome line */
+
+@media (max-width: 768px) {
+    .Hero-section h1 {
+        font-size: clamp(30px, 8vw, 80px);
+    }
+}
 
 
 
