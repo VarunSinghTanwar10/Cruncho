@@ -5,14 +5,13 @@ window.addEventListener('scroll', () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop && scrollTop > 50) {
-        // scroll down → hide
         navbar.style.top = "-100px";
         navbar.style.opacity = "0";
     } else {
-        // scroll up → show
         navbar.style.top = "0";
         navbar.style.opacity = "1";
     }
 
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
+
