@@ -140,22 +140,34 @@ header {
 }
 
 .Hero-section h1 {
-    font-size: 60px;
+    font-size: 120px;
     color: white;
     font-family: "Bungee", sans-serif;
+    margin-top: 20vh;
+
+}
+
+
+.Hero-section section {
+    display: grid;
+    justify-content: center;
+    margin-top: -30vh;
+}
+
+.Hero-section button {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
     
 }
 
-.Hero-section span a {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    color: yellow;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-}
 
 .Hero-section a:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
     text-decoration: underline;
 }
 
