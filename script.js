@@ -15,3 +15,12 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
+const exploreBtn = document.getElementById("exploreBtn");
+const productsSection = document.getElementById("products");
+
+exploreBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: productsSection.offsetTop, // top se distance
+        behavior: "smooth"             // smooth scrolling
+    });
+});
