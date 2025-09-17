@@ -15,6 +15,7 @@ window.addEventListener('scroll', () => {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
+// Button on click scroll to products 
 
 const exploreBtn = document.getElementById("exploreBtn");
 const productsSection = document.getElementById("products");
