@@ -208,7 +208,9 @@ header {
 .product-container-3,
 .product-container-4,
 .product-container-5,
-.product-container-6 {
+.product-container-6,
+.product-container-7,
+.product-container-8 {
     border: 2px solid white;
     border-radius: 30px;
     padding: 20px;
@@ -220,7 +222,9 @@ header {
 .product-container-3:hover,
 .product-container-4:hover,
 .product-container-5:hover,
-.product-container-6:hover {
+.product-container-6:hover,
+.product-container-7:hover,
+.product-container-8:hover {
     transform: translateY(-10px);
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
@@ -230,7 +234,9 @@ header {
 .product-container-3 h1,
 .product-container-4 h1,
 .product-container-5 h1,
-.product-container-6 h1 {
+.product-container-6 h1,
+.product-container-7 h1,
+.product-container-8 h1 {
     color: white;
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -242,7 +248,9 @@ header {
 .product-container-3 img,
 .product-container-4 img,
 .product-container-5 img,
-.product-container-6 img {
+.product-container-6 img,
+.product-container-7 img,
+.product-container-8 img {
     width: 100%;
     height: auto;
     border: 2px solid white;
@@ -257,7 +265,9 @@ header {
 .product-container-3 p,
 .product-container-4 p,
 .product-container-5 p,
-.product-container-6 p {
+.product-container-6 p,
+.product-container-7 p,
+.product-container-8 p {
     padding: 10px;
     text-align: center;
     color: white;
@@ -298,21 +308,23 @@ header {
 
 
 .scroll-top-btn button {
-  display: none;               /* by default hidden */
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 16px 16px;
-  border: none;
-  border-radius: 50px;          /* round button */
-  background: #333333c9;
-  backdrop-filter:blur(5px);
-  z-index: 2;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease;
+    display: none;
+    /* by default hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 16px 16px;
+    border: none;
+    border-radius: 50px;
+    /* round button */
+    background: #333333c9;
+    backdrop-filter: blur(5px);
+    z-index: 2;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
 }
 
 
