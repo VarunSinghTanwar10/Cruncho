@@ -139,14 +139,15 @@ header {
     animation: HeroFadeIn 1s alternate ease-in-out;
     margin-bottom: 20vh;
 
+
 }
 
 .Hero-section h1 {
-    font-size: 120px;
+    font-size: clamp(40px, 10vw, 120px);
+    white-space: nowrap;
+    margin-top: 25vh;
     color: white;
     font-family: "Bungee", sans-serif;
-    margin-top: 25vh;
-
 }
 
 
@@ -419,6 +420,55 @@ header {
 }
 
 
+
+
+
+
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo,
+    .navbar,
+    .login-btn {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .products-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 12vh;
+    }
+
+
+}
+
+/* Responsive products wrapper */
+@media (max-width: 480px) {
+    .products-wrapper {
+        grid-template-columns: 1fr;
+        margin-top: 10vh;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+
 /* Responsive footer */
 @media (max-width: 1024px) {
     .site-footer {
@@ -459,49 +509,4 @@ header {
     .footer-column h2 {
         font-size: 16px;
     }
-}
-
-
-
-
-
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-    }
-
-    .logo,
-    .navbar,
-    .login-btn {
-        flex: 1 1 100%;
-        display: flex;
-        justify-content: center;
-        margin: 5px 0;
-    }
-
-    .navbar ul {
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .products-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 12vh;
-    }
-
-
-}
-
-@media (max-width: 480px) {
-    .products-wrapper {
-        grid-template-columns: 1fr;
-        margin-top: 10vh;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
 }
