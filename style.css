@@ -297,6 +297,27 @@ header {
 }
 
 
+.scroll-top-btn button {
+  display: none;               /* by default hidden */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 16px 16px;
+  border: none;
+  border-radius: 50px;          /* round button */
+  background: #333333c9;
+  backdrop-filter:blur(5px);
+  z-index: 2;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+}
+
+
+
+
 
 /* Footer Container */
 .site-footer {
