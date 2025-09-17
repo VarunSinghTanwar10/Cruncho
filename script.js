@@ -1,18 +1,28 @@
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
+// Navbar show hide on scroll
+let lastScroll = 0;
+const header = document.querySelector("header");
 
-window.addEventListener('scroll', () => {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > lastScrollTop && scrollTop > 50) {
-        navbar.style.top = "-100px";
-        navbar.style.opacity = "0";
-    } else {
-        navbar.style.top = "0";
-        navbar.style.opacity = "1";
+window.addEventListener("scroll", () => {
+    if (window.innerWidth < 768) {
+        header.style.top = "0";
+        return;
     }
 
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+        header.style.top = "-120px";
+    } else {
+        header.style.top = "0";
+    }
+
+    lastScroll = currentScroll;
+});
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth < 768) {
+        header.style.top = "0";
+    }
 });
 
 // Button on click scroll to products 
