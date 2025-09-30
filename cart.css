@@ -30,17 +30,22 @@ header {
     transform: scale(0.85);
 }
 
-
-.product-img {
-    display: inline-block;
-    border: 2px solid whitesmoke;
-    width: 10vw;
-    margin-bottom: -15vh;
-    padding: 20px;
-    padding-top: 30px;
-    align-items: center;
+.product-list-box {
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 50px;
+    margin-top: 40px;
 }
 
-.product-img img {
-    width: 10vw;
+.product-list {
+    display: flex;
+    margin: 20px;
+
+}
+
+
+.product-list img {
+    height: 20vw;
+    border: 2px solid white;
+    border-radius: 50px;
 }
