@@ -108,13 +108,37 @@ header {
 }
 
 .google-svg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .google-svg svg {
-  width: 18px;
-  height: 18px;
-  vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.Apple-sign-in {
+    display: flex;
+    justify-content: center;
+}
+
+.Apple-sign-in button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.apple-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple-svg svg {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
 }
