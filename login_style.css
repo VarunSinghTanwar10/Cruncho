@@ -142,3 +142,17 @@ header {
     height: 18px;
     vertical-align: middle;
 }
+
+/* Copyright Footer */
+.copy-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.copy-right p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
