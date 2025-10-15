@@ -21,7 +21,8 @@ header {
     backdrop-filter: blur(5px);
     z-index: 1;
     transition: top 0.4s ease, opacity 0.4s ease;
-
+    transform: translateY(0);
+    opacity: 1;
 
 }
 
@@ -310,14 +311,12 @@ header {
 
 .scroll-top-btn button {
     display: none;
-    /* by default hidden */
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 16px 16px;
     border: none;
     border-radius: 50px;
-    /* round button */
     background: #333333c9;
     backdrop-filter: blur(5px);
     z-index: 2;
@@ -336,7 +335,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    /* reduced padding */
     border-top: 2px solid white;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -354,7 +352,6 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    /* tighter spacing */
     flex: 1;
     min-width: 180px;
     box-sizing: border-box;
@@ -458,20 +455,27 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 1s ease, opacity 1s ease;
 }
 
-/* When user scrolls down — hide navbar */
+
 header.hide {
     transform: translateY(-100%);
     opacity: 0;
 }
 
-/* When user scrolls up — show navbar */
+
 header.show {
     transform: translateY(0);
     opacity: 1;
 }
+
+header.show {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+
+
 
 
 
