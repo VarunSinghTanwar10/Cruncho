@@ -60,3 +60,12 @@ scrollTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+// Hamburger Menu Toggle
+const hamMenu = document.getElementById('ham-menu');
+const navbarMenu = document.querySelector('.navbar');
+
+hamMenu.addEventListener('click', () => {
+    hamMenu.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+});
