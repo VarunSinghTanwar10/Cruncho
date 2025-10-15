@@ -40,6 +40,7 @@ header {
 .login-box-border {
 
     border: 2px solid white;
+    border-style: dashed;
     padding: 40px 60px;
     border-radius: 50px;
     text-align: center;
@@ -93,4 +94,27 @@ header {
     transform: scale(0.85);
 }
 
+.Google-sign-in {
+    display: flex;
+    justify-content: center;
+}
 
+.Google-sign-in button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.google-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-svg svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}

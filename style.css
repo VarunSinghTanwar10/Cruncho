@@ -347,6 +347,8 @@ header {
     align-items: flex-start;
 }
 
+
+
 /* Each column */
 .footer-column {
     display: flex;
@@ -412,6 +414,21 @@ header {
 }
 
 .copy-right p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+/* Developer Details */
+
+.Developer_Thanks {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.Developer_Thanks p {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
