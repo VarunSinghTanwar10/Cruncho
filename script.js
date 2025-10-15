@@ -25,6 +25,31 @@ window.addEventListener("resize", () => {
     }
 });
 
+// ====== Navbar Hide/Show on Scroll ======
+let lastScrollY = window.scrollY;
+const nav = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const currentScrollY = window.scrollY;
+
+  // Only trigger on mobile or tablet (you can remove if you want it always)
+  if (window.innerWidth <= 1024) {
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      // scrolling down
+      nav.classList.remove("show");
+      nav.classList.add("hide");
+    } else {
+      // scrolling up
+      nav.classList.remove("hide");
+      nav.classList.add("show");
+    }
+  }
+
+  lastScrollY = currentScrollY;
+});
+
+
+
 // Button on click scroll to products 
 
 const exploreBtn = document.getElementById("exploreBtn");

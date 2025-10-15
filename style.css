@@ -453,6 +453,28 @@ header {
     transition: all 0.4s ease;
 }
 
+/* ====== NAVBAR SCROLL BEHAVIOR ====== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* When user scrolls down — hide navbar */
+header.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* When user scrolls up — show navbar */
+header.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
 /* Show hamburger on small screens */
 @media (max-width: 768px) {
     header {
@@ -473,7 +495,7 @@ header {
         transition: all 0.4s ease;
         flex-direction: column;
         justify-content: center;
-        
+
     }
 
     .navbar ul {
