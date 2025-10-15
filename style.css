@@ -473,7 +473,7 @@ header {
         transition: all 0.4s ease;
         flex-direction: column;
         justify-content: center;
-        border-top: 2px solid white;
+        
     }
 
     .navbar ul {
