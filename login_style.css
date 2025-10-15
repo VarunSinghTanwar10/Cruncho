@@ -93,13 +93,4 @@ header {
     transform: scale(0.85);
 }
 
-.frgt-pass a {
 
-    color: white;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-}
-
-.frgt-pass a:hover {
-    text-decoration: underline;
-}
