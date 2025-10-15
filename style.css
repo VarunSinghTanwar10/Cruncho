@@ -455,7 +455,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: transform 1s ease, opacity 1s ease;
+    transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 
