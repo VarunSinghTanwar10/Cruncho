@@ -477,7 +477,7 @@ header.show {
 
 
 /* Show hamburger on small screens */
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
     header {
         justify-content: space-between;
         align-items: center;
