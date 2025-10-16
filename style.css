@@ -556,16 +556,28 @@ header.show {
 @media (max-width: 768px) {
     .Hero-section h1 {
         font-size: clamp(30px, 8vw, 80px);
+
     }
 }
 
 @media (max-width: 1700px) {
     .Hero-section h1 {
         font-size: clamp(30px, 8vw, 80px);
+
     }
 }
 
+@media (max-width: 768px) {
+    .Hero-section {
+        margin-top: -6vh;
+    }
+}
 
+@media (max-width: 1700px) {
+    .Hero-section {
+        margin-top: -6vh;
+    }
+}
 
 /* Responsive navbar */
 
