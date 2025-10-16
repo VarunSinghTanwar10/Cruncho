@@ -25,27 +25,6 @@ window.addEventListener("resize", () => {
     }
 });
 
-// ====== Smooth Navbar Hide/Show on Scroll ======
-let lastScrollY = window.scrollY;
-const nav = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-
-    if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // scrolling down → hide slowly
-        nav.classList.remove("show");
-        nav.classList.add("hide");
-    } else if (currentScrollY < lastScrollY) {
-        // scrolling up → show slowly
-        nav.classList.remove("hide");
-        nav.classList.add("show");
-    }
-
-    lastScrollY = currentScrollY;
-});
-
-
 
 // Button on click scroll to products 
 
