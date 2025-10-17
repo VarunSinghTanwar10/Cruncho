@@ -62,11 +62,22 @@ scrollTopBtn.addEventListener("click", () => {
     });
 });
 
-// Hamburger Menu Toggle
-const hamMenu = document.getElementById('ham-menu');
-const navbarMenu = document.querySelector('.navbar');
+const hamburger = document.getElementById('hamburger');
+const sideNav = document.getElementById('sideNav');
+const overlay = document.getElementById('overlay');
 
-hamMenu.addEventListener('click', () => {
-    hamMenu.classList.toggle('active');
-    navbarMenu.classList.toggle('active');
+// Toggle menu open/close
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    sideNav.classList.toggle('open');
+    overlay.classList.toggle('show');
 });
+
+// Close menu when clicking on overlay
+overlay.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    sideNav.classList.remove('open');
+    overlay.classList.remove('show');
+});
+
+
