@@ -26,6 +26,25 @@ header {
 
 }
 
+/* Menu Hamburger toggle button */
+.hamburger {
+    width: 35px;
+    height: 25px;
+    flex-direction: column;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
 
 /* Logo */
 .logo {
@@ -430,6 +449,27 @@ header {
     font-size: 15px;
 }
 
+
+/* Show and hide menu hamburger different screen size */
+@media (max-width:1800px) {
+    .hamburger {
+        display: none;
+    }
+
+    .hamburger span {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger span {
+        display: block;
+    }
+}
 
 /* Responsive hero section welcome line */
 
