@@ -462,7 +462,8 @@ header {
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:1380px) {
+
     .ham-menu {
         display: flex;
     }
@@ -481,6 +482,20 @@ header {
 }
 
 
+/* Navbar hide on small screens */
+@media (max-width:1380px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 2vw;
+    }
+
+    .navbar a {
+        display: none;
+    }
+}
 
 /* Responsive hero section welcome line */
 
@@ -498,17 +513,7 @@ header {
     }
 }
 
-@media (max-width: 768px) {
-    .Hero-section {
-        margin-top: -6vh;
-    }
-}
 
-@media (max-width: 1700px) {
-    .Hero-section {
-        margin-top: -6vh;
-    }
-}
 
 /* Responsive navbar */
 
