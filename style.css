@@ -45,8 +45,7 @@ header {
     flex-direction: column;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .overlay.active {
@@ -589,11 +588,15 @@ body.noscroll {
 }
 
 /* Show overlay-ham (☰) and enable overlay on small screens */
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
     .overlay-ham {
         display: block;
         position: relative;
         z-index: 10;
+    }
+
+    .overlay-menu{
+        margin-top: -10vh;
     }
 
     /* Hide the desktop navbar when hamburger is visible */
