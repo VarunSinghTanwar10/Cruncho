@@ -1,48 +1,43 @@
-// Navbar show hide on scroll
+// ===== Navbar Show/Hide on Scroll =====
 let lastScroll = 0;
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
-    if (window.innerWidth < 768) {
-        header.style.top = "0";
-        return;
-    }
-
     const currentScroll = window.scrollY;
 
+    // If scrolling down → hide navbar
     if (currentScroll > lastScroll) {
         header.style.top = "-120px";
     } else {
+        // If scrolling up → show navbar
         header.style.top = "0";
     }
 
     lastScroll = currentScroll;
 });
 
+// Optional: Reset navbar position when resizing
 window.addEventListener("resize", () => {
-    if (window.innerWidth < 768) {
-        header.style.top = "0";
-    }
+    header.style.top = "0";
 });
 
 
-// Button on click scroll to products 
-
+// ===== Button: Scroll to Products =====
 const exploreBtn = document.getElementById("exploreBtn");
 const productsSection = document.getElementById("products");
 
-exploreBtn.addEventListener("click", () => {
-    const offset = 50; // gap from top
-    window.scrollTo({
-        top: productsSection.offsetTop - offset,
-        behavior: "smooth"
+if (exploreBtn && productsSection) {
+    exploreBtn.addEventListener("click", () => {
+        const offset = 50; // gap from top
+        window.scrollTo({
+            top: productsSection.offsetTop - offset,
+            behavior: "smooth"
+        });
     });
-});
+}
 
 
-
-// Scroll to top button
-
+// ===== Scroll to Top Button =====
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 // Show button after scrolling down
@@ -61,7 +56,3 @@ scrollTopBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
-
-
-
-
