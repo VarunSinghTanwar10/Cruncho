@@ -29,21 +29,54 @@ header {
 
 .overlay {
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.920);
-    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.92);
+    z-index: 3;
     padding: 20px;
     backdrop-filter: blur(5px);
+    transform: translateY(-150vh);
+    opacity: 0;
+    transition: transform 0.45s ease, opacity 0.45s ease;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+body.noscroll {
+    overflow: hidden;
+}
+
+.overlay-close-btn {
+    display: inline-block;
+    margin: 20px;
 }
 
 .overlay-close-btn button {
-    display: inline-block;
+    display: block;
+    font-size: 50px;
     padding: 20px;
+    width: 5vw;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .overlay-close-btn a {
     text-decoration: none;
+    color: white;
+
 }
 
 .overlay-menu ul {
@@ -67,11 +100,37 @@ header {
     padding: 18px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-    margin-top: 5vh;
+    margin-top: 2vh;
 
 }
 
+.overlay-ham button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    padding: 8px;
+}
 
+.bi-list {
+    color: white;
+    width: 3vw;
+    height: 3vw;
+}
+
+.overlay-ham button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.overlay-ham button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+.overlay-close-btn button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
 
 .overlay-menu a:hover {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
@@ -82,11 +141,17 @@ header {
     transform: scale(0.85);
 }
 
+.overlay-close-btn button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
 
 
 /* Logo */
 .logo {
     flex: 1;
+    margin-left: 2vw;
 }
 
 .logo a {
@@ -502,6 +567,42 @@ header {
     }
 }
 
+/* Hide overlay & hamburger on large screens (desktop) */
+@media (min-width: 1025px) {
+
+    .overlay,
+    .overlay-ham {
+        display: none;
+    }
+}
+
+/* Show overlay-ham (☰) and enable overlay on small screens */
+@media (max-width: 1024px) {
+    .overlay-ham {
+        display: block !important;
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Hide the desktop navbar when hamburger is visible */
+    .navbar {
+        display: none !important;
+    }
+
+    /* Style adjustment for overlay menu links on small screens */
+    .overlay-menu a {
+        width: 30vw;
+        font-size: 20px;
+        margin-bottom: -2vh;
+
+    }
+
+    .overlay-close-btn button {
+        font-size: 40px;
+        width: auto;
+    }
+}
+
 /* Responsive hero section welcome line */
 
 @media (max-width: 768px) {
@@ -526,7 +627,7 @@ header {
 
 /* Responsive navbar */
 
-/* ✅ Responsive Navbar (Tablet + Mobile) */
+/* Responsive Navbar (Tablet + Mobile) */
 @media (max-width: 768px) {
     header {
         flex-wrap: wrap;
@@ -561,7 +662,7 @@ header {
     }
 }
 
-/* ✅ Extra Small Screens */
+/* Extra Small Screens */
 @media (max-width: 480px) {
     .navbar ul {
         flex-direction: column;
