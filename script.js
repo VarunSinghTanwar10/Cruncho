@@ -7,7 +7,7 @@ window.addEventListener("scroll", () => {
 
     // If scrolling down → hide navbar
     if (currentScroll > lastScroll) {
-        header.style.top = "-120px";
+        header.style.top = "-150px";
     } else {
         // If scrolling up → show navbar
         header.style.top = "0";
