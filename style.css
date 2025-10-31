@@ -26,78 +26,6 @@ header {
 
 }
 
-/* Menu Hamburger toggle button */
-.ham-menu {
-    width: 35px;
-    height: 25px;
-    flex-direction: column;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-
-.ham-menu span {
-    display: inline-block;
-    height: 4px;
-    width: 100%;
-    background: #fff;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.side-nav {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    /* start hidden off-screen */
-    width: 250px;
-    height: 100%;
-    background-color: #111;
-    padding-top: 80px;
-    transition: left 0.4s ease;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    z-index: 900;
-}
-
-.side-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 12px 25px;
-    font-size: 1.1rem;
-    transition: background 0.3s;
-}
-
-.side-nav a:hover {
-    background-color: #333;
-}
-
-/* When menu is open */
-.side-nav.open {
-    left: 0;
-}
-
-/* Overlay behind menu */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-    z-index: 800;
-}
-
-.overlay.show {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-
 
 /* Logo */
 .logo {
@@ -500,37 +428,6 @@ header {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-}
-
-
-/* Show and hide menu hamburger different screen size */
-@media (max-width:1800px) {
-    .ham-menu {
-        display: none;
-    }
-
-    .ham-menu span {
-        display: none;
-    }
-}
-
-@media(max-width:1380px) {
-
-    .ham-menu {
-        display: flex;
-    }
-
-    .ham-menu span {
-        display: block;
-    }
-}
-
-/* hamburger animation */
-
-.ham-menu:active {
-    transition: all 0.1s ease-in-out;
-    transform: scale(0.85);
-    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
 

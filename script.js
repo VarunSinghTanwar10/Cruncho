@@ -62,24 +62,6 @@ scrollTopBtn.addEventListener("click", () => {
     });
 });
 
-const hamburger = document.getElementById('hamburger');
-const sideNav = document.getElementById('sideNav');
-const overlay = document.getElementById('overlay');
-
-// Toggle menu open/close
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    sideNav.classList.toggle('open');
-    overlay.classList.toggle('show');
-});
-
-// Close menu when clicking on overlay
-overlay.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    sideNav.classList.remove('open');
-    overlay.classList.remove('show');
-});
-
 
 
 
