@@ -45,7 +45,7 @@ header {
     flex-direction: column;
     display: flex;
     flex-direction: column;
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.95);
 
 }
 
@@ -100,7 +100,7 @@ body.noscroll {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
-    max-width:max-content;
+    max-width: 15vw;
     color: white;
     justify-content: center;
     justify-self: center;
@@ -108,7 +108,7 @@ body.noscroll {
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     margin-top: 2vh;
-    
+
 
 }
 
@@ -575,22 +575,7 @@ body.noscroll {
     }
 }
 
-/* Hide overlay & hamburger on large screens (desktop) */
-@media (min-width: 1025px) {
 
-    .overlay,
-    .overlay-ham {
-        display: none;
-    }
-}
-
-/* List svg size on small screen */
-@media (max-width:1024px) {
-    .bi-list {
-        height: 4vh;
-        width: 8vw;
-    }
-}
 
 /* Show overlay-ham (☰) and enable overlay on small screens */
 @media (max-width: 1280px) {
@@ -756,34 +741,86 @@ body.noscroll {
     }
 }
 
-/* ===== Overlay Center Fix for Small Screens ===== */
-@media (max-width: 768px) {
-    .overlay-close-btn {
-        position: absolute;
-        top: 20px;
-        right: 25px;
+
+
+/* 🚫 Hide overlay + hamburger on large screens */
+@media (min-width: 1025px) {
+
+    .overlay,
+    .overlay-ham {
+        display: none;
+    }
+}
+
+/* ✅ Enable overlay menu only for tablets & mobiles */
+@media (max-width: 1024px) {
+    .overlay-ham {
+        display: block;
+        /* show hamburger icon */
     }
 
-    .overlay-menu {
+    .overlay {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        width: 40vw;
+        height: 100vh;
+        transform: translateX(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.45s ease, opacity 0.45s ease;
     }
+
+    .overlay.active {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 
     .overlay-menu ul {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.2rem;
+        gap: 18px;
+        margin-top: 23vh;
     }
 
     .overlay-menu a {
-        width: 60vw;
-        text-align: center;
-        font-size: 20px;
-        padding: 16px;
+        width: 85%;
+        font-size: 18px;
+        padding: 14px;
+        border-radius: 50px;
     }
+
+    .overlay-close-btn button {
+        font-size: 34px;
+        padding: 8px;
+        width: 8vw;
+    }
+
+    .bi-list {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+
+/* 📞 Tiny phones */
+@media (max-width: 480px) {
+    .overlay-menu a {
+        font-size: 16px;
+        padding: 12px;
+        max-width: fit-content;
+    }
+
+    .overlay-close-btn button {
+        font-size: 28px;
+        width: 8vw;
+    }
+
+    .bi-list {
+        width: 9vw;
+        height: 9vw;
+    }
+}
+
+.overlay-menu ul {
+    gap: 18px;
+    margin-top: 15vh;
 }
