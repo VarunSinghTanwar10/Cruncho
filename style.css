@@ -32,12 +32,12 @@ header {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 30vw;
     background-color: rgba(0, 0, 0, 0.92);
     z-index: 3;
     padding: 20px;
     backdrop-filter: blur(5px);
-    transform: translateY(-150vh);
+    transform: translatex(-150vh);
     opacity: 0;
     transition: transform 0.45s ease, opacity 0.45s ease;
     pointer-events: none;
@@ -45,6 +45,7 @@ header {
     flex-direction: column;
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -61,6 +62,7 @@ body.noscroll {
 .overlay-close-btn {
     display: inline-block;
     margin: 20px;
+    z-index: 4;
 }
 
 .overlay-close-btn button {
@@ -86,17 +88,19 @@ body.noscroll {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 20px;
     align-items: center;
+    margin-top: 15vh;
 
 }
 
 .overlay-menu a {
+
     display: flex;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
-    width: 10vw;
+    max-width:max-content;
     color: white;
     justify-content: center;
     justify-self: center;
@@ -104,6 +108,7 @@ body.noscroll {
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
     margin-top: 2vh;
+    
 
 }
 
@@ -595,7 +600,7 @@ body.noscroll {
         z-index: 10;
     }
 
-    .overlay-menu{
+    .overlay-menu {
         margin-top: -10vh;
     }
 
