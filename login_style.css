@@ -39,8 +39,8 @@ header {
 
 .login-box-border {
 
-    border: 2px solid white;
-    border-style: dashed;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-style: solid;
     padding: 40px 60px;
     border-radius: 50px;
     text-align: center;
@@ -93,6 +93,42 @@ header {
 .login-box button:active {
     transform: scale(0.85);
 }
+
+.sep-line {
+    position: relative;
+    text-align: center;
+    margin: 10px 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #ccc;
+}
+
+.sep-line::before,
+.sep-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.sep-line::before {
+    left: 0;
+}
+
+.sep-line::after {
+    right: 0;
+}
+
+.sep-line span {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 0 12px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
 
 .Google-sign-in {
     display: flex;
@@ -149,6 +185,7 @@ header {
     justify-content: center;
     margin-top: 15px;
     text-align: center;
+    border-top: 2px solid white;
 }
 
 .copy-right p {
