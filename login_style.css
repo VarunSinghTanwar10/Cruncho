@@ -63,7 +63,6 @@ header {
     border-radius: 50px;
     border: none;
     outline: none;
-    /* text-align: center; */
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     max-width: -webkit-fill-available;
@@ -80,12 +79,14 @@ header {
     margin-bottom: 2vh;
     border: none;
     border-radius: 50px;
+    width: 30vw;
     background: none;
     color: white;
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
     transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
 .sign-btn button:hover {
@@ -214,7 +215,7 @@ header {
 .copy-right {
     display: flex;
     justify-content: center;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-bottom: 5vh;
     text-align: center;
     border-top: 2px solid white;
