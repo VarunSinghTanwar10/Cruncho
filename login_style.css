@@ -85,7 +85,7 @@ header {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
-    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .sign-btn button:hover {
@@ -93,6 +93,7 @@ header {
 }
 
 .login-box button:active {
+    transition: all 0.1s ease-in-out;
     transform: scale(0.85);
 }
 
@@ -152,12 +153,17 @@ header {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
-    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
 .Google-sign-in button:hover {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.Google-sign-in button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
 }
 
 .google-svg {
@@ -190,12 +196,17 @@ header {
     font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
-    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
 .Apple-sign-in button:hover {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.Apple-sign-in button:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
 }
 
 .apple-svg {
