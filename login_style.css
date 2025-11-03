@@ -272,7 +272,7 @@ header {
 @media (max-width:1024px) {
     .login-box-border {
         margin-top: 25vh;
-        
+
     }
 
     .login-box button {
@@ -306,7 +306,7 @@ header {
     }
 
     .login-box button {
-        width: 8vw;
+        width: 20vw;
         padding: 10px 10px;
     }
 
