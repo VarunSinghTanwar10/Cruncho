@@ -74,7 +74,7 @@ header {
 
 .sign-btn button {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 16px 30px;
     margin-top: 1.5vh;
     margin-bottom: 2vh;
     border: none;
@@ -144,7 +144,7 @@ header {
     align-items: center;
     padding: 16px 30px;
     gap: 8px;
-    margin-top: 4vh;
+    margin-top: 2vh;
     border: none;
     border-radius: 50px;
     background: none;
