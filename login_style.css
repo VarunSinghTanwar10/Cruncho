@@ -9,7 +9,6 @@ header {
 }
 
 .logo a {
-
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -18,7 +17,8 @@ header {
     font-family: "Bungee", sans-serif;
     font-size: 22px;
     transition: all 0.3s ease;
-    animation: bg-light 2.5s infinite alternate-reverse;
+    
+
 }
 
 .logo a:hover {
