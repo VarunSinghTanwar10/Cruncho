@@ -73,7 +73,7 @@ header {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
-.login-box button {
+.sign-btn button {
     display: inline-block;
     padding: 12px 28px;
     margin-top: 1.5vh;
@@ -88,7 +88,7 @@ header {
     transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
 }
 
-.login-box button:hover {
+.sign-btn button:hover {
     box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
@@ -135,14 +135,29 @@ header {
 .Google-sign-in {
     display: flex;
     justify-content: center;
+    margin-bottom: 2.5vh;
 }
 
 .Google-sign-in button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 30px;
     gap: 8px;
     margin-top: 4vh;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
+    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+
+}
+
+.Google-sign-in button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
 .google-svg {
@@ -166,7 +181,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px 30px;
     gap: 8px;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 rgba(245, 245, 245, 0);
+    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+
+}
+
+.Apple-sign-in button:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
 }
 
 .apple-svg {
@@ -185,7 +214,7 @@ header {
 .copy-right {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 15vh;
     text-align: center;
     border-top: 2px solid white;
 }
