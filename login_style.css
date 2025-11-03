@@ -6,6 +6,8 @@ body {
 header {
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid white;
+    margin-bottom: 6vh;
 }
 
 .logo a {
@@ -17,7 +19,7 @@ header {
     font-family: "Bungee", sans-serif;
     font-size: 22px;
     transition: all 0.3s ease;
-    
+
 
 }
 
@@ -235,4 +237,80 @@ header {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
+}
+
+@media (max-width:540px) {
+    .login-box-border {
+        margin-top: 25vh;
+    }
+
+    .login-box button {
+        width: 55vw;
+        padding: 10px 20px;
+    }
+
+    .copy-right {
+        margin-top: 35vh;
+    }
+}
+
+@media (max-width:768px) {
+    .login-box-border {
+        margin-top: 25vh;
+    }
+
+    .login-box button {
+        width: 25vw;
+        padding: 10px 20px;
+    }
+
+    .copy-right {
+        margin-top: 35vh;
+    }
+}
+
+@media (max-width:1024px) {
+    .login-box-border {
+        margin-top: 25vh;
+        
+    }
+
+    .login-box button {
+        width: 20vw;
+        padding: 10px 10px;
+    }
+
+    .copy-right {
+        margin-top: 35vh;
+    }
+}
+
+@media (max-width:1440px) {
+    .login-box-border {
+        margin-top: 15vh;
+    }
+
+    .login-box button {
+        width: 15vw;
+        padding: 10px 10px;
+    }
+
+    .copy-right {
+        margin-top: 35vh;
+    }
+}
+
+@media (max-width:2560px) {
+    .login-box-border {
+        margin-top: 5vh;
+    }
+
+    .login-box button {
+        width: 8vw;
+        padding: 10px 10px;
+    }
+
+    .copy-right {
+        margin-top: 15vh;
+    }
 }
