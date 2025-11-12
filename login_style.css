@@ -116,6 +116,7 @@ body {
     .login-box input {
         height: 50px;
         font-size: 1rem;
+        font-family: "Poppins", sans-serif;
     }
 
     .login-box button {
