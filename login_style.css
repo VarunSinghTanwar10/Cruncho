@@ -107,14 +107,16 @@ body {
     padding: 0px 8px;
 }
 
+
 @media (min-width: 1400px) {
     .login-box {
+        margin-top: -6vh;
         width: 28vw;
         max-width: 520px;
     }
 
     .login-box input {
-        height: 50px;
+        padding: 10px 40px;
         font-size: 1rem;
         font-family: "Poppins", sans-serif;
     }
