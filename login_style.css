@@ -29,8 +29,31 @@ body {
     transform: scale(0.85);
 }
 
+.login-border {
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+    
+}
 
+.login-box h1 {
+    text-align: center;
+}
 
+.login-box {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 20px;
+    height: 30vh;
+    width: 20vw;
+}
 
-
-
+.login-box input {
+    display: flex;
+    justify-self: center;
+    margin: 14px;
+    width: 100%;
+    height: 3vh;
+}
