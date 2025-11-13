@@ -195,7 +195,7 @@ body {
     }
 
     .login-box input {
-        width: 120%;
+        width: 100%;
         height: 32px;
         margin: 12px 0 18px;
         font-size: 0.95rem;
