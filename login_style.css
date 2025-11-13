@@ -3,4 +3,80 @@ body {
     color: white;
 }
 
-.logo
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Bungee", sans-serif;
+    color: white;
+    font-weight: 500;
+    margin-top: 5vh;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo a:hover {
+    box-shadow: 0px 0px 10px 10px rgba(245, 245, 245, 0.3);
+}
+
+.logo a:active {
+    transition: all 0.1s ease-in-out;
+    transform: scale(0.85);
+}
+
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 13vh;
+
+}
+
+.login-box h1 {
+    font-size: 3em;
+}
+
+.login-box form {
+    display: grid;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.05);
+    padding: 40px;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-box label {
+    font-size: 20px;
+    margin-bottom: -2vh;
+}
+
+.login-box input {
+    height: 6vh;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: "Poppins", sans-serif;
+    padding: 0px 15px;
+    outline: none;
+
+}
+
+.login-box button {
+    display: block;
+    justify-self: center;
+    width: 20vw;
+    height: 6vh;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: none;
+    border-radius: 50px;
+
+}
