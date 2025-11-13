@@ -218,7 +218,7 @@ body {
 }
 
 /* ============= 400px (Small phones) ============= */
-@media (max-width: 100px) {
+@media (max-width: 400px) {
     body {
         font-size: 14px;
     }
