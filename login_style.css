@@ -76,7 +76,6 @@ body {
 
 
 
-
 .login-box button {
     display: block;
     justify-self: center;
@@ -104,6 +103,7 @@ body {
     justify-content: center;
     margin: 3vh;
 }
+
 
 .footer-copyright {
     display: flex;
