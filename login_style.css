@@ -80,7 +80,7 @@ body {
     display: block;
     justify-self: center;
     height: 5vh;
-    width:10vw;
+    padding: 0px 24px;
     margin-top: 2vh;
     background: none;
     border: none;
